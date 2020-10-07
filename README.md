@@ -29,11 +29,13 @@
 | time_id       | integer    |                                |
 | prefecture_id | integer    | null: false                    |
 | category_id   | integer    | null: false                    |
-| text          | text       |                                |
-| address       | string     | null: false                    |
-| latitude      | float      | null: false                    |
-| longitude     | float      | null: false                    |
-| parking       | float      | null: false                    |
+| text          | text       | null: false                    |
+| address       | string     |                                |
+| latitude      | float      |                                |
+| longitude     | float      |                                |
+| parking       | float      |                                |
+| crowd         | float      |                                |
+| toilet        | float      |                                |
 | user          | references | null: false, foreign_key: true |
 
 ### Association
