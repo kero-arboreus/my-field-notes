@@ -1,24 +1,88 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# README
 
-Things you may want to cover:
+##  usersテーブル
 
-* Ruby version
+| column          | Type    | options     | 
+| --------------- | ------  | ----------- |
+| name            | string  | null: false |
+| email           | string  | null: false |
+| password        | string  | null: false |
+| name            | string  | null: false |
+| name_kana       | string  | null: false |
+| address         | string  | null: false |
+| phone           | string  | null: false |
 
-* System dependencies
+### Association
+ has_many :articles
+ has_many :favorites
+ has_many :comments
 
-* Configuration
 
-* Database creation
+## articlesテーブル
 
-* Database initialization
+| column        | Type       | options                        |
+| ------------- | ---------- | ------------------------------ |
+| title         | string     | null: false                    |
+| date          | date       | null: false                    |
+| time_id       | integer    |                                |
+| prefecture_id | integer    | null: false                    |
+| category_id   | integer    | null: false                    |
+| text          | text       |                                |
+| address       | string     | null: false                    |
+| latitude      | float      | null: false                    |
+| longitude     | float      | null: false                    |
+| parking       | float      | null: false                    |
+| user          | references | null: false, foreign_key: true |
 
-* How to run the test suite
+### Association
+ belongs_to :user
+ has_many   :favorites
+ has_many   :comments
+ has_many   :article_hashes
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+  ## comments テーブル
 
-* ...
+| column | Type       | options                        |
+| -------| ---------  | ------------------------------ |
+| text   | text       | null: false                    |
+| item   | references | null: false, foreign_key: true |
+| user   | references | null: false, foreign_key: true |
+
+### Association
+ belongs_to :user
+ belongs_to :item
+
+   ## favorites テーブル
+
+| column  | Type       | options                        |
+| ------- | ---------  | ------------------------------ |
+| user    | references | null: false, foreign_key: true |
+| article | references | null: false, foreign_key: true |
+
+### Association
+ belongs_to :user
+ belongs_to :article
+
+## hashtags テーブル
+
+| column   | Type   | options                        |
+| -------- | ------ | ------------------------------ |
+| hashname | string | null: false                    |
+
+### Association
+ has_many :article_hashes
+
+## article_hashes テーブル
+
+| column  | Type       | options                        |
+| ------- | ---------  | ------------------------------ |
+| article | references | null: false, foreign_key: true |
+| hashtag | references | null: false, foreign_key: true |
+
+### Association
+ belongs_to :article
+ belongs_to :hashtag
+
