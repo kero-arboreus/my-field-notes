@@ -10,8 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .search-form{
@@ -30,8 +29,7 @@
 .menu-contents{
   display: flex;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .menu-list{
