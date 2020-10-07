@@ -1,0 +1,9 @@
+.footer{
+  width: 100vw;
+  min-width: 960px;
+  height: 20vh;
+  background-color: #37AB9D;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
