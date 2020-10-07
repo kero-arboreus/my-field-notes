@@ -1,0 +1,58 @@
+.main{
+  display: flex;
+  margin: 0 5% 0 5%;
+}
+
+.main-contents{
+  width: 70%;
+  padding:5% 5%;
+  text-align: center;
+}
+
+.side-menu{
+  background-color: #586365;
+  width: 30%;
+  height: 60vh;
+}
+
+.new-post, h1{
+ margin: 0 auto;
+ padding-top: 1vh;
+ width: 50%;
+ height: 7vh;
+ font-size: 24px;
+ font-weight: bold;
+ background-color: #FFC042;
+ color: white;
+ border-radius: 5px 5px 5px 5px;
+}
+
+.new-post, h1:before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f52e";
+  padding-right: 7px;
+}
+
+.article-info{
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.title, h3{
+  color: #454545;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title, h3:before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f518";
+  padding-right: 7px;
+}
+
+.writer, h2{
+  color: #454545;
+  font-size: 16px;
+  padding: 1vh 0 0 10%;
+}
