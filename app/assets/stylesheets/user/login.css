@@ -1,0 +1,14 @@
+.login-title{
+  display: inline-block;
+  padding: 7px 10px;
+  min-width: 150px;
+  text-align: center;
+  color: #454545;
+  font-size: 32px;
+  background:white;
+  border-bottom: 5px dotted #FFC042;
+}
+
+.tanuki{
+  padding-left: 20%;
+}

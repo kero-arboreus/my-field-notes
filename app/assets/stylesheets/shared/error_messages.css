@@ -1,0 +1,17 @@
+.error-alert{
+  background-color:#eee8aa;
+  padding: 3% 5%;
+  margin-bottom: 5%;
+}
+
+.error-message{
+  font-size: 11px;
+  color: indianred;
+}
+
+.login-flash-message{
+  background-color:#eee8aa;
+  font-size: 14px;
+  color: indianred;
+  text-align: center;
+}
