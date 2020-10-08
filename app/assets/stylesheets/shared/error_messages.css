@@ -8,3 +8,10 @@
   font-size: 11px;
   color: indianred;
 }
+
+.login-flash-message{
+  background-color:#eee8aa;
+  font-size: 14px;
+  color: indianred;
+  text-align: center;
+}
