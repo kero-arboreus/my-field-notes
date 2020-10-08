@@ -8,9 +8,11 @@ class User < ApplicationRecord
 
   with_options presence: true do
     validates :nickname
-    validates :name, format: { with: /\A[ぁ-んァ-ン一-龥]/, message: 'full-width characters' }
-    validates :name_kana, format: { with: /\A[ァ-ヶー－]+\z/, message: 'full-width katakana characters' }
+    validates :last_name, format: { with: /\A[ぁ-んァ-ン一-龥]/, message: 'full-width characters' }
+    validates :first_name, format: { with: /\A[ぁ-んァ-ン一-龥]/, message: 'full-width characters' }
+    validates :last_name_kana, format: { with: /\A[ァ-ヶー－]+\z/, message: 'full-width katakana characters' }
+    validates :first_name_kana, format: { with: /\A[ァ-ヶー－]+\z/, message: 'full-width katakana characters' }
+    validates :prefecture_id, numericality: { other_than: 1, message: 'select' }
     validates :user_address, format: { with: /\A[ぁ-んァ-ン一-龥]/, message: 'full-width characters' }
-    validates :phone,numericality: { only_integer: true }, length: { maximum: 11 }
   end
 end
