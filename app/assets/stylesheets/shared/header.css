@@ -1,5 +1,4 @@
 .top-header{
-  width: 100%;
   min-width: 960px;
   height: 20vh;
   background-color: #37AB9D;
@@ -38,46 +37,46 @@
 
 .newpost{
   text-decoration: none;
-  font-size: 20px;
-  padding: 20px 30px;
+  font-size: 18px;
+  padding: 15px 25px;
   color: white;
   background-color: #FFC042;
-  border-radius: 50%;
+  border-radius: 60px;
   font-weight: bold;
   cursor: pointer;
 }
 
 .sign-out{
   text-decoration: none;
-  font-size: 20px;
-  padding: 20px 30px;
+  font-size: 18px;
+  padding: 15px 25px;
   margin-left: 4vw;
   color: white;
   background-color: #586365;
-  border-radius: 50%;
+  border-radius: 60px;
   font-weight: bold;
   cursor: pointer;
 }
 
 .login{
   text-decoration: none;
-  font-size: 20px;
-  padding: 20px 30px;
+  font-size: 18px;
+  padding: 15px 25px;
   color: white;
   background-color: #4DC0B2;
-  border-radius: 50%;
+  border-radius: 60px;
   font-weight: bold;
   cursor: pointer;
 }
 
 .sign-up{
   text-decoration: none;
-  font-size: 20px;
-  padding: 20px 30px;
+  font-size: 18px;
+  padding: 15px 25px;
   margin-left: 4vw;
   color: white;
   background-color: #FFC042;
-  border-radius: 50%;
+  border-radius: 60px;
   font-weight: bold;
   cursor: pointer;
 }
