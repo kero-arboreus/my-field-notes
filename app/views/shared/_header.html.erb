@@ -10,7 +10,7 @@
  <div class="menu-contents">
     <ul class="menu-list">
     <% if user_signed_in? %>
-     <li><%= link_to ' 記録する ',"#", class: "newpost" %></li>
+     <li><%= link_to current_user.nickname,"#", class: "username" %></li>
      <li><%= link_to 'Signout',destroy_user_session_path, class: "sign-out", method: :delete%></li>
     <% else %>
      <li><%= link_to 'Login ',new_user_session_path, class: "login" %></li>
