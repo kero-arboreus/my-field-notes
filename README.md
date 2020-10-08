@@ -6,12 +6,12 @@
 
 | column          | Type    | options     | 
 | --------------- | ------  | ----------- |
-| name            | string  | null: false |
+| nickname        | string  | null: false |
 | email           | string  | null: false |
 | password        | string  | null: false |
 | name            | string  | null: false |
 | name_kana       | string  | null: false |
-| address         | string  | null: false |
+| user_address    | string  | null: false |
 | phone           | string  | null: false |
 
 ### Association
