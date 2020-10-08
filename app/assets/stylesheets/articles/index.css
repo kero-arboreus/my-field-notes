@@ -1,6 +1,8 @@
 .main{
+  width: 100%;
+  min-width: 960px;
   display: flex;
-  margin: 0 5%;
+  margin: 0 auto;
 }
 
 .main-contents{
@@ -17,7 +19,7 @@
   height: 60vh;
 }
 
-.new-post, h1{
+.new-post{
  margin: 0 auto;
  padding-top: 1vh;
  width: 50%;
@@ -29,7 +31,7 @@
  border-radius: 5px 5px 5px 5px;
 }
 
-.new-post, h1:before{
+.new-post:before{
   font-family: "Font Awesome 5 Free";
   content: "\f52e";
   padding-right: 7px;
