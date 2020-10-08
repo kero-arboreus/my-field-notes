@@ -36,6 +36,28 @@
   display: flex;
 }
 
+.newpost{
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 30px;
+  color: white;
+  background-color: #FFC042;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sign-out{
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 30px;
+  color: white;
+  background-color: #586365;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .login{
   text-decoration: none;
   font-size: 20px;

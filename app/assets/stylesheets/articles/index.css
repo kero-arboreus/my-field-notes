@@ -10,8 +10,10 @@
 }
 
 .side-menu{
+  color: white;
+  font-size: 12px;
   background-color: #586365;
-  width: 30%;
+  width: 20%;
   height: 60vh;
 }
 
