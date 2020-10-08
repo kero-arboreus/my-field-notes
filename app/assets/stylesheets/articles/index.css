@@ -1,6 +1,6 @@
 .main{
   display: flex;
-  margin: 0 5% 0 5%;
+  margin: 0 5%;
 }
 
 .main-contents{
@@ -53,7 +53,7 @@
   padding-right: 7px;
 }
 
-.writer, h2{
+.writer {
   color: #454545;
   font-size: 16px;
   padding: 1vh 0 0 10%;
