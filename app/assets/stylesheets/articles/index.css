@@ -43,15 +43,15 @@
   justify-content: center;
 }
 
-.title, h3{
+.title{
   color: #454545;
   font-size: 20px;
   font-weight: bold;
 }
 
-.title, h3:before{
+.title:before{
   font-family: "Font Awesome 5 Free";
-  content: "\f518";
+  content: "\f303";
   padding-right: 7px;
 }
 

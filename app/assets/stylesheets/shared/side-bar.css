@@ -1,5 +1,29 @@
+a{
+  text-decoration: none;
+}
+
 .side-bar{
   width: 30%;
   height: calc(100% - 40vh);
   background-color: #586365;
 }
+
+.newpost{
+  padding: 10%;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.newpost-btn{
+  width: 30%;
+}
+
+.newpost-text{
+  color: white;
+  font-size: 14px; 
+}
+
+.search-list{
+  padding: 20% 10% ;
+}
+

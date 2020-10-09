@@ -35,15 +35,23 @@
   display: flex;
 }
 
+.fish{
+  width: 10%;
+}
+
 .username{
   text-decoration: none;
-  font-size: 20px;
-  padding: 10px 13px;
+  font-size: 22px;
   color: white;
   font-weight: bold;
-  border-radius: 60px;
-  border: 2px solid #FFC042;
   cursor: pointer;
+}
+
+.username:before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f578";
+  padding-right: 5px;
+  color: #FFC042;
 }
 
 .sign-out{
