@@ -2,12 +2,6 @@ a{
   text-decoration: none;
 }
 
-.side-bar{
-  width: 30%;
-  height: calc(100% - 40vh);
-  background-color: #586365;
-}
-
 .newpost{
   padding: 10%;
   text-align: center;

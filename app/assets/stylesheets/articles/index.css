@@ -7,8 +7,10 @@
 
 .main-contents{
   width: 70%;
+  height: 70vh;
   padding:5% 5%;
   text-align: center;
+  overflow: scroll;
 }
 
 .side-menu{
@@ -16,7 +18,7 @@
   font-size: 12px;
   background-color: #586365;
   width: 20%;
-  height: 60vh;
+  height: 70vh;
 }
 
 .new-post{
