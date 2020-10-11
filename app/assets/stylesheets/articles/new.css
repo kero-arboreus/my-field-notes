@@ -1,7 +1,7 @@
 
 .article-form{
   width: 100%;
-  min-width: 960px;
+  min-width: 500px;
   background-color: #37AB9D;
   display: flex;
   justify-content: center;
@@ -27,20 +27,23 @@
 .article-main{
   width: 100%;
 }
+
 .article-contents{
   padding-bottom: 5%;
 }
 
 .input-form{
   width: 70%;
-  height: 5vh;
 }
 
 .select-box{
   height: 5vh;
 }
+
 .contents-wrapper{
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .flex-contents{
@@ -53,7 +56,8 @@
 
 .text-form{
   width: 70%;
-  height: 20vh;
+  height: 10vh;
+  vertical-align:top;
 }
 
 .article-post{
