@@ -4,8 +4,29 @@
   text-align: right;
 }
 
+.author-menu{
+  text-align: left;
+}
+
+.edit-btn{
+  margin: 0 5%;
+  padding: 1vh 3%;
+  border: 1px outset #ffc042;
+  background-color: #ffc042;
+  color: white;
+  border-radius: 5px;
+}
+
+.delete-btn{
+  padding: 1vh 3%;
+  border: 1px outset indianred;
+  background-color: indianred;
+  color: white;
+  border-radius: 5px;
+}
+
 .show-info{
-  padding: 2vh 0;
+  padding: 2vh 0 5vh;
   display: flex;
   justify-content: space-between;
 }
