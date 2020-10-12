@@ -27,10 +27,20 @@ class ArticlesController < ApplicationController
 
   def update
     @article.update(article_params)
+
+    if @article.valid?
+      redirect_to article_path
+    else
+      render 'edit'
+    end
   end
 
   def destroy
-    @article.destroy
+    if @article.destroy
+      redirect_to root_path
+    else
+      render 'show'
+    end
   end
 
   private
