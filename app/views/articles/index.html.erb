@@ -4,18 +4,18 @@
  <div class="main-contents">
   <h1 class="new-post">New Post</h1>
    <ul class="article-lists">
-    <%# @articles.each do |article| %>
+    <% @articles.each do |article| %>
      <li class='list'>
-       <%#=link_to article_path(article.id%>
+       <%#=link_to article_path(article.id) %>
        <div class="article-info">
-         <h3 class="title">たくさんアジが釣れました</h3>
-         <h2 class="writer">kero</h3>
+         <h2 class="title"><%= article.title %></h2>
+         <p class="writer"><%= article.user.nickname %></p>
        </div>
        <div class='article-img-content'>
-         <%#= image_tag article.image, class: "article-img"%>
+         <%= image_tag article.image, class: "article-img", size: '200x200' %>
        </div>
      </li>
-    <%# end %>
+    <% end %>
    </ul>
  </div>
  <div class=side-menu>

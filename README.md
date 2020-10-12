@@ -22,7 +22,7 @@
 | ------------- | ---------- | ------------------------------ |
 | title         | string     | null: false                    |
 | date          | date       | null: false                    |
-| time_id       | integer    |                                |
+| time_zone_id  | integer    |                                |
 | prefecture_id | integer    | null: false                    |
 | category_id   | integer    | null: false                    |
 | text          | text       | null: false                    |
