@@ -3,12 +3,12 @@
  <div class="main-contents">
    <p class="create-time"><%= "投稿日時:" %><%= @article.created_at %></p>
     <div class="show-info">
-      <h2 class="title"><%= @article.title %></h2>
+      <h2 class="show-title"><%= @article.title %></h2>
       <%= link_to @article.user.nickname, "#", class: "show-writer" %>
     </div>
      <div class="datetime-info">
-      <p><%= "日付: " %><%= @article.date %></p>
-      <p><%= "時間帯: " %><%= @article.time_zone.name %></p>
+      <p><%= "●日付: " %><%= @article.date %></p>
+      <p><%= "●時間帯: " %><%= @article.time_zone.name %></p>
     </div>
     <div class='article-img-content'>
       <%= image_tag @article.image, class: "show-img" %>

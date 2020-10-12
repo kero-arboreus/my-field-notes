@@ -10,9 +10,26 @@
   justify-content: space-between;
 }
 
+.show-title{
+  padding: 0 10px;
+  text-align: left;
+  width: 80%;
+  background-color: #4dc0b2;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.show-title:before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f303";
+  padding-right: 7px;
+}
+
 .show-writer {
   color: #454545;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .datetime-info{
