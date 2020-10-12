@@ -7,20 +7,24 @@
     <div class="author-menu">
      <%= link_to "編集", edit_article_path(@article.id), class: "edit-btn" %>
      <%= link_to "削除", article_path(@article.id), method: :delete, class: "delete-btn" %>
-    </div>
     <% end %>
-    
-    <div class="show-info">
+     </div>
+     
       <h2 class="show-title"><%= @article.title %></h2>
-      <%= link_to @article.user.nickname, "#", class: "show-writer" %>
-    </div>
+      
      <div class="datetime-info">
-      <p><%= "●日付: " %><%= @article.date %></p>
-      <p><%= "●時間帯: " %><%= @article.time_zone.name %></p>
+      <p class="show-date"><%= "日付: " %><%= @article.date %></p>
+      <p> <%= "時間帯: " %><%= @article.time_zone.name %> </p>
+       <%= link_to @article.user.nickname, "#", class: "show-writer" %>
     </div>
+
     <div class='article-img-content'>
       <%= image_tag @article.image, class: "show-img" %>
     </div>
+
+    <div class="map" id="map"></div>
+    <%= render "map"%>
+
     <div class="text-box"><%= @article.text %></div>
  </div>
 

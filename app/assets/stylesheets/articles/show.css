@@ -5,6 +5,7 @@
 }
 
 .author-menu{
+  margin: 3% 0;
   text-align: left;
 }
 
@@ -25,16 +26,10 @@
   border-radius: 5px;
 }
 
-.show-info{
-  padding: 2vh 0 5vh;
-  display: flex;
-  justify-content: space-between;
-}
-
 .show-title{
-  padding: 0 10px;
+  padding: 5px;
   text-align: left;
-  width: 80%;
+  width: 100%;
   background-color: #4dc0b2;
   color: white;
   font-size: 22px;
@@ -48,21 +43,28 @@
   padding-right: 7px;
 }
 
-.show-writer {
-  color: #454545;
-  font-size: 22px;
-}
-
 .datetime-info{
-  padding-bottom: 3%;
+  padding: 3% 0;
   display: flex;
   justify-content: space-around;
   font-size: 18px;
+  color: #454545;
+}
+
+.show-writer {
+  color: #454545;
 }
 
 .show-img{
   width: 50%;
   height: 60vh;
+}
+
+.map{
+  margin-top: 5%;
+  width: 40%;
+  height: 30vh;
+  border: 1px solid #454545;
 }
 
 .text-box{
