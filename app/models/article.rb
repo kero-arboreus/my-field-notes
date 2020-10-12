@@ -16,5 +16,4 @@ class Article < ApplicationRecord
     validates :text
     validates :address
   end
-
 end

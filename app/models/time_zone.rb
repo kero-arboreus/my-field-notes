@@ -5,6 +5,6 @@ class TimeZone < ActiveHash::Base
     { id: 3, name: '昼' },
     { id: 4, name: '夕' },
     { id: 5, name: '夜' },
-    { id: 6, name: '指定なし' },
+    { id: 6, name: '指定なし' }
   ]
 end
