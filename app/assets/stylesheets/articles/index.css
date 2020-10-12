@@ -7,7 +7,7 @@
 
 .main-contents{
   width: 70%;
-  height: 70vh;
+  height: 80vh;
   padding:5% 5%;
   text-align: center;
   overflow: scroll;
@@ -18,7 +18,7 @@
   font-size: 12px;
   background-color: #586365;
   width: 20%;
-  height: 70vh;
+  height: 80vh;
 }
 
 .new-post{
@@ -40,14 +40,14 @@
 }
 
 .article-info{
-  padding-top: 5%;
+  padding-top: 3%;
   display: flex;
   justify-content: center;
 }
 
 .title{
   color: #454545;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
 }
 
