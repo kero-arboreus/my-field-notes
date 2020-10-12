@@ -1,0 +1,72 @@
+
+<div class="article-form">
+
+  <div class="article-form-main">
+   <h1 class="article-form-title">
+    ノートを編集
+   </h1>
+   <%= form_with model: @article, class: "article-main", local: true do |f| %>
+   <%= render "shared/error_messages", model: f.object %>
+
+   <div class="article-contents">
+    <label class="form-text">タイトル</label>
+    <span class="indispensable">必須</span>
+    <%= f.text_field :title, class:"input-form", placeholder:"タイトルを入力" %>
+   </div>
+
+   <div class="article-contents">
+    <label class="form-text">カテゴリー</label>
+    <span class="indispensable">必須</span>
+    <%= f.collection_select(:category_id, Category.all,:id, :name, {}, {class:"select-box"}) %>
+   </div>
+
+  
+  <div class="contents-wrapper">
+   <div class="article-contents">
+    <label class="form-text">日付</label>
+    <span class="indispensable">必須</span>
+    <%= f.date_select :date, use_month_numbers: true %>
+   </div>
+   <div class="flex-contents">
+    <label class="form-text">時間帯</label>
+    <span class="indispensable">必須</span>
+    <%= f.collection_select(:time_zone_id, TimeZone.all,:id, :name, {}, {class:"select-box"}) %>
+   </div>
+  </div>
+
+   
+   <div class="image-contents">
+    <span class="indispensable">必須</span>
+    <%= f.file_field :image %>
+   </div>
+ 
+  <div class="contents-wrapper">
+   <div class="article-contents">
+    <label class="form-text">都道府県</label>
+    <span class="indispensable">必須</span>
+    <%= f.collection_select(:prefecture_id, Prefecture.all,:id, :name, {}, {class:"select-box"}) %>
+   </div>
+   <div class="flex-contents">
+    <label class="form-text">住所</label>
+    <span class="indispensable">必須</span>
+    <%= f.text_field :address, class:"input-form", placeholder:"市区町村以降を入力", maxlength:"50" %>
+   </div>
+  </div>
+
+   <div class="article-contents">
+    <label class="form-text">メモ</label>
+    <span class="indispensable">必須</span>
+    <%= f.text_area :text, class:"text-form", placeholder:"メモを入力" %>
+   </div>
+   
+  <div class="article-post">
+    <%= f.submit "編集", class:"post-btn" %>
+  </div>
+ </div>
+
+   <footer class="article-form-header">
+  <%= link_to image_tag("logo.png", class:"footer-logo"), "/" %>
+  </footer>
+</div>
+ <% end %>
+
