@@ -6,7 +6,7 @@
    <ul class="article-lists">
     <% @articles.each do |article| %>
      <li class='list'>
-       <%#=link_to article_path(article.id) %>
+       <%=link_to article_path(article.id) do %>
        <div class="article-info">
          <h2 class="title"><%= article.title %></h2>
          <p class="writer"><%= article.user.nickname %></p>
@@ -14,11 +14,12 @@
        <div class='article-img-content'>
          <%= image_tag article.image, class: "article-img", size: '200x200' %>
        </div>
+       <% end %>
      </li>
     <% end %>
    </ul>
  </div>
- <div class=side-menu>
+ <div class="side-menu">
   <%= render "shared/side_bar"%>
  </div>
 </div>
