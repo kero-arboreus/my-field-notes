@@ -16,4 +16,8 @@ class Article < ApplicationRecord
     validates :text
     validates :address
   end
+
+  geocoded_by :address
+  after_validation :geocode, if: :address_changed?
+  
 end
