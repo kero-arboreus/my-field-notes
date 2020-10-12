@@ -2,10 +2,11 @@
   font-size: 12px;
   color: lightgray;
   text-align: right;
+  margin-bottom: 3% ;
 }
 
 .author-menu{
-  margin: 3% 0;
+  margin-bottom: 3%;
   text-align: left;
 }
 

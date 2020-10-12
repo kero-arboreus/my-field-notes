@@ -1,14 +1,15 @@
 <%= render "shared/header"%>
 <div class="main">
  <div class="main-contents">
-   <p class="create-time"><%= "投稿日時:" %><%= @article.created_at %></p>
+   <p class="create-time"><%= "投稿日時:" %><%= l @article.created_at %></p>
 
    <% if user_signed_in? && current_user.id == @article.user_id %>
     <div class="author-menu">
      <%= link_to "編集", edit_article_path(@article.id), class: "edit-btn" %>
      <%= link_to "削除", article_path(@article.id), method: :delete, class: "delete-btn" %>
-    <% end %>
      </div>
+    <% end %>
+     
      
       <h2 class="show-title"><%= @article.title %></h2>
       
