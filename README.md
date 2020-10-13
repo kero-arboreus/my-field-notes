@@ -39,6 +39,7 @@
  has_many   :favorites
  has_many   :comments
  has_many   :article_hashes
+ has_many   :hashtags, through: :article_hashes
 
 
   ## comments テーブル
@@ -72,6 +73,7 @@
 
 ### Association
  has_many :article_hashes
+ has_many :articles, through: :article_hashes
 
 ## article_hashes テーブル
 
