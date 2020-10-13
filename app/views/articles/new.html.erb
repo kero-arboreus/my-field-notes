@@ -53,6 +53,26 @@
    </div>
   </div>
 
+  <p class="rate-guide">-星をクリックして評価してください-</p>
+  <div class="rate-contents">
+   <div class="rate-form" id="parking">
+    <%= f.label :parking,'駐車場', class:'rate-contents'%>
+    <%= f.hidden_field :parking, id: :review_star %>
+   </div>
+
+   <div class="rate-form" id="toilet">
+    <%= f.label :toilet,'トイレ', class:'rate-contents'%>
+    <%= f.hidden_field :toilet, id: :review_star %>
+   </div>
+
+   <div class="rate-form" id="crowd">
+    <%= f.label :crowd,'混雑　', class:'rate-contents'%>
+    <%= f.hidden_field :crowd, id: :review_star %>
+   </div>
+  </div>
+   <%= render 'rating'%>
+ 
+
    <div class="article-contents">
     <label class="form-text">メモ</label>
     <span class="indispensable">必須</span>

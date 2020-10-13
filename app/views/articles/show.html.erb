@@ -23,8 +23,27 @@
       <%= image_tag @article.image, class: "show-img" %>
     </div>
 
+   <div class="rate-wrapper">
     <div class="map" id="map"></div>
     <%= render "map"%>
+
+    <table>
+     <tr>
+      <th>駐車場</th>
+      <td><div id="parking-rate-<%= @article.id %>"></div></td>
+     </tr>
+     <tr>
+      <th>トイレ</th>
+      <td><div id="toilet-rate-<%= @article.id %>"></div></td>
+     </tr>
+     <tr>
+      <th>混雑</th>
+       <td><div id="crowd-rate-<%= @article.id %>"></div></td>
+     </tr>
+    </table>
+    <%= render 'rating'%>
+   </div>
+         
 
     <div class="text-box"><%= @article.text %></div>
  </div>

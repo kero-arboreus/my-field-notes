@@ -29,7 +29,7 @@
 }
 
 .article-contents{
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
 
 .input-form{
@@ -37,7 +37,7 @@
 }
 
 .select-box{
-  height: 5vh;
+  height: 3vh;
 }
 
 .contents-wrapper{
@@ -51,13 +51,24 @@
 }
 
 .image-contents{
-  padding: 20% 0;
+  padding: 10% 0;
+}
+
+.rate-guide{
+  color: #454545;
+}
+
+.rate-contents{
+  display: flex;
+  justify-content: space-around;
+  margin:1% 0 3%;
+  color: #454545;
 }
 
 .text-form{
   width: 70%;
   height: 10vh;
-  vertical-align:top;
+  vertical-align: top;
 }
 
 .article-post{
@@ -65,7 +76,7 @@
  }
  
  .post-btn{
-   width: 30%;
+   width: 20%;
    height: 5vh;
    background-color: #FFC042;
    color: white;

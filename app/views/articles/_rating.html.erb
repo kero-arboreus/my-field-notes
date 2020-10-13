@@ -1,0 +1,66 @@
+<script>
+  $('#parking').raty({
+    size     : 36,
+    starOff:  '<%= asset_path('star-off.png') %>',
+    starOn : '<%= asset_path('star-on.png') %>',
+    starHalf: '<%= asset_path('star-half.png') %>',
+    scoreName: 'article[parking]',
+    half: true,
+  });
+  </script>
+ 
+   <script>
+  $('#toilet').raty({
+    size     : 36,
+    starOff:  '<%= asset_path('star-off.png') %>',
+    starOn : '<%= asset_path('star-on.png') %>',
+    starHalf: '<%= asset_path('star-half.png') %>',
+    scoreName: 'article[toilet]',
+    half: true,
+  });
+  </script>
+ 
+   <script>
+  $('#crowd').raty({
+    size     : 36,
+    starOff:  '<%= asset_path('star-off.png') %>',
+    starOn : '<%= asset_path('star-on.png') %>',
+    starHalf: '<%= asset_path('star-half.png') %>',
+    scoreName: 'article[crowd]',
+    half: true,
+  });
+  </script>
+
+   <script>
+          $('#parking-rate-<%= @article.id %>').raty({
+            size: 36,
+            starOff:  '<%= asset_path('star-off.png') %>',
+            starOn : '<%= asset_path('star-on.png') %>',
+            starHalf: '<%= asset_path('star-half.png') %>',
+            half: true,
+            readOnly: true,
+            score: '<%= @article.parking %>',
+          });
+          </script> 
+             <script>
+          $('#toilet-rate-<%= @article.id %>').raty({
+            size: 36,
+            starOff:  '<%= asset_path('star-off.png') %>',
+            starOn : '<%= asset_path('star-on.png') %>',
+            starHalf: '<%= asset_path('star-half.png') %>',
+            half: true,
+            readOnly: true,
+            score: '<%= @article.toilet %>',
+          });
+          </script> 
+             <script>
+          $('#crowd-rate-<%= @article.id %>').raty({
+            size: 36,
+            starOff:  '<%= asset_path('star-off.png') %>',
+            starOn : '<%= asset_path('star-on.png') %>',
+            starHalf: '<%= asset_path('star-half.png') %>',
+            half: true,
+            readOnly: true,
+            score: '<%= @article.crowd %>',
+          });
+          </script> 

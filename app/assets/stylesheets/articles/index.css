@@ -7,7 +7,7 @@
 
 .main-contents{
   width: 70%;
-  height: 80vh;
+  height: 70vh;
   padding:5% 5%;
   text-align: center;
   overflow: scroll;
@@ -61,4 +61,10 @@
   color: #454545;
   font-size: 16px;
   padding: 1vh 0 0 10%;
+}
+
+.article-img{
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
 }

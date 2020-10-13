@@ -58,15 +58,43 @@
 
 .show-img{
   width: 50%;
-  height: 60vh;
+  height: 50vh;
+  object-fit: contain;
+}
+
+.rate-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .map{
-  margin-top: 5%;
   width: 40%;
   height: 30vh;
   border: 1px solid #454545;
 }
+
+table{
+  width: 50%;
+  margin: 5% 0;
+  border: solid 2px #37AB9D;
+  border-collapse: collapse;
+}
+
+table th{
+  padding: 5% 0;
+  text-align: center;
+  background-color: #4DC0B2;
+  color: white;
+  font-weight: bold;
+  border: dashed 1px #37AB9D;
+}
+
+table td{
+  padding: 5% 0;
+  border: dashed 1px #37AB9D;
+}
+
 
 .text-box{
   margin-top: 5%;
