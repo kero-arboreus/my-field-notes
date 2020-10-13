@@ -26,15 +26,15 @@ class Article < ApplicationRecord
 
   after_create do
     article = Article.find_by(id: id)
-    hashtags  = hashbody.scan(/[#＃][\w\p{Han}ぁ-ヶｦ-ﾟー]+/)
+    hashtags = hashbody.scan(/[#＃][\w\p{Han}ぁ-ヶｦ-ﾟー]+/)
     hashtags.uniq.map do |hashtag|
       tag = Hashtag.find_or_create_by(hashname: hashtag.downcase.delete('#'))
-    article.hashtags << tag
+      article.hashtags << tag
     end
   end
 
-  before_update do 
-    article = Article.find_by(id:id)
+  before_update do
+    article = Article.find_by(id: id)
     article.hashtags.clear
     hashtags = hashbody.scan(/[#＃][\w\p{Han}ぁ-ヶｦ-ﾟー]+/)
     hashtags.uniq.map do |hashtag|
