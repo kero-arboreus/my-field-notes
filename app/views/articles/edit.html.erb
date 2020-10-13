@@ -52,7 +52,24 @@
     <%= f.text_field :address, class:"input-form", placeholder:"市区町村以降を入力", maxlength:"50" %>
    </div>
   </div>
+ 
+  <div class="raiting-form" id="parking">
+    <%= f.label :parking,'駐車場', class:'rate-contents' %>
+    <%= f.hidden_field :parking, id: :review_star %>
+  </div>
 
+    <div class="raiting-form" id="toilet">
+    <%= f.label :toilet,'トイレ', class:'rate-contents' %>
+    <%= f.hidden_field :toilet, id: :review_star %>
+  </div>
+
+   <div class="raiting-form" id="crowd">
+    <%= f.label :crowd,'混雑', class:'rate-contents' %>
+    <%= f.hidden_field :crowd, id: :review_star %>
+  </div>
+
+  <%= render 'rating'%>
+ 
    <div class="article-contents">
     <label class="form-text">メモ</label>
     <span class="indispensable">必須</span>
