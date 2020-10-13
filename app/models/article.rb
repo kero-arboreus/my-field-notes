@@ -1,6 +1,8 @@
 class Article < ApplicationRecord
   belongs_to :user
   has_one_attached :image
+  has_many :article_hashes, dependent: :destroy
+  has_many :hashtags, through: :article_hashes
 
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to_active_hash :time_zone
@@ -17,6 +19,27 @@ class Article < ApplicationRecord
     validates :address
   end
 
+  validates :hashbody, length: { maximum: 30 }
+
   geocoded_by :address
   after_validation :geocode, if: :address_changed?
+
+  after_create do
+    article = Article.find_by(id: id)
+    hashtags  = hashbody.scan(/[#＃][\w\p{Han}ぁ-ヶｦ-ﾟー]+/)
+    hashtags.uniq.map do |hashtag|
+      tag = Hashtag.find_or_create_by(hashname: hashtag.downcase.delete('#'))
+    article.hashtags << tag
+    end
+  end
+
+  before_update do 
+    article = Article.find_by(id:id)
+    article.hashtags.clear
+    hashtags = hashbody.scan(/[#＃][\w\p{Han}ぁ-ヶｦ-ﾟー]+/)
+    hashtags.uniq.map do |hashtag|
+      tag = Hashtag.find_or_create_by(hashname: hashtag.downcase.delete('#'))
+      article.hashtags << tag
+    end
+  end
 end
