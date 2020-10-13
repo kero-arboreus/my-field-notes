@@ -46,7 +46,7 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:image, :title, :date, :time_zone_id, :prefecture_id, :category_id, :text, :address, :latitude, :longitude, :parking, :crowd, :toilet).merge(user_id: current_user.id)
+    params.require(:article).permit(:image, :title, :date, :time_zone_id, :prefecture_id, :category_id, :text, :address, :latitude, :longitude, :parking, :crowd, :toilet, :hashbody, hashtag_ids: []).merge(user_id: current_user.id)
   end
 
   def set_article
