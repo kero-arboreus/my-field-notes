@@ -1,0 +1,19 @@
+.hashtag-main{
+  background-color: white;
+  width: 90%;
+  height: 90vh;
+  padding: 5% 10%;
+  overflow: scroll;
+}
+
+.hashtag-lists{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hash-title{
+  color: #454545;
+  font-size: 20px;
+  font-weight: bold;
+}

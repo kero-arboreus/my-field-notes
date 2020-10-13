@@ -19,6 +19,10 @@
        <%= link_to @article.user.nickname, "#", class: "show-writer" %>
     </div>
 
+    <div class="hashtag">
+     <%= render_with_hashtags(@article.hashbody) %>
+    </div>
+
     <div class='article-img-content'>
       <%= image_tag @article.image, class: "show-img" %>
     </div>
@@ -37,7 +41,7 @@
       <td><div id="toilet-rate-<%= @article.id %>"></div></td>
      </tr>
      <tr>
-      <th>混雑</th>
+      <th>混雑度</th>
        <td><div id="crowd-rate-<%= @article.id %>"></div></td>
      </tr>
     </table>

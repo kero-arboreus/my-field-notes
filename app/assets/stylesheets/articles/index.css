@@ -8,7 +8,7 @@
 .main-contents{
   width: 70%;
   height: 70vh;
-  padding:5% 5%;
+  padding:5% 5% 0;
   text-align: center;
   overflow: scroll;
 }
@@ -39,15 +39,21 @@
   padding-right: 7px;
 }
 
+.article-lists{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .article-info{
-  padding-top: 3%;
+  padding-top: 10%;
   display: flex;
   justify-content: center;
 }
 
 .title{
   color: #454545;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 
