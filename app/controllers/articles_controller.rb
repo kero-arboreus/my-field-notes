@@ -43,6 +43,11 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def hashtag
+    @hashtag = Hashtag.find_by(hashname: params[:name])
+    @article = @hashtag.articles.page(params[:page]).order('updated_at DESC')
+  end
+
   private
 
   def article_params
