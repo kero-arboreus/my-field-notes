@@ -37,7 +37,8 @@
    
    <div class="image-contents">
     <span class="indispensable">必須</span>
-    <%= f.file_field :image %>
+    <%= f.file_field :image, id: "article_image"%>
+    <div id="image_list"></div>
    </div>
  
   <div class="contents-wrapper">
