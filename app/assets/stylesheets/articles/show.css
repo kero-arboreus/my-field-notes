@@ -56,6 +56,13 @@
   color: #454545;
 }
 
+.hashtag a{
+  padding: 1px;
+  background-color: #ffc042;
+  color: white;
+  border-radius: 3px;
+}
+
 .show-img{
   width: 50%;
   height: 50vh;

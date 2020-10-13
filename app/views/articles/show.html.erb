@@ -19,6 +19,10 @@
        <%= link_to @article.user.nickname, "#", class: "show-writer" %>
     </div>
 
+    <div class="hashtag">
+     <%= render_with_hashtags(@article.hashbody) %>
+    </div>
+
     <div class='article-img-content'>
       <%= image_tag @article.image, class: "show-img" %>
     </div>
