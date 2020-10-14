@@ -3,6 +3,7 @@ class Article < ApplicationRecord
   has_many_attached :images
   has_many :article_hashes, dependent: :destroy
   has_many :hashtags, through: :article_hashes
+  has_many :comments, dependent: :destroy
 
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to_active_hash :time_zone
