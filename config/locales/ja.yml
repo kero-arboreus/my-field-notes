@@ -30,6 +30,7 @@ ja:
        nickname: ニックネーム
      article:
        title: タイトル
+       date: 日付
        images: 画像
        address: 住所
        time_zone_id: 時間帯
