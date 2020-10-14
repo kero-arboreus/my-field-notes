@@ -46,7 +46,7 @@
 
 | column | Type       | options                        |
 | -------| ---------  | ------------------------------ |
-| text   | text       | null: false                    |
+| message| text       | null: false                    |
 | item   | references | null: false, foreign_key: true |
 | user   | references | null: false, foreign_key: true |
 
