@@ -1,6 +1,6 @@
 class Article < ApplicationRecord
   belongs_to :user
-  has_one_attached :image
+  has_many_attached :images
   has_many :article_hashes, dependent: :destroy
   has_many :hashtags, through: :article_hashes
 
@@ -41,5 +41,15 @@ class Article < ApplicationRecord
       tag = Hashtag.find_or_create_by(hashname: hashtag.downcase.delete('#'))
       article.hashtags << tag
     end
+  end
+
+  validate :validate_images
+
+  private
+
+  def validate_images
+    return if images.count <= 3
+
+    errors.add(:images, 'You can upload max 3 images')
   end
 end

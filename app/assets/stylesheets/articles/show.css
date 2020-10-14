@@ -64,9 +64,15 @@
   border-radius: 3px;
 }
 
+.article-img-content{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10%;
+}
+
 .show-img{
-  width: 50%;
-  height: 50vh;
+  width: 40%;
+  height: 40vh;
   object-fit: contain;
 }
 
