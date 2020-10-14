@@ -45,7 +45,7 @@ RSpec.describe Article, type: :model do
       end
 
       it 'titleが30文字以上では投稿できないこと' do
-        @article.title = "ああああああああああいいいいいいいいいいううううううううううえ"
+        @article.title = 'ああああああああああいいいいいいいいいいううううううううううえ'
         @article.valid?
         expect(@article.errors.full_messages).to include('タイトルは30文字以内で入力してください')
       end

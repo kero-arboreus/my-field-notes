@@ -49,6 +49,7 @@ class Article < ApplicationRecord
 
   def validate_images
     return if images.count <= 3
+
     errors.add(:images, 'は最大3枚までアップロード可能です')
   end
 end

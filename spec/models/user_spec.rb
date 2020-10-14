@@ -16,7 +16,7 @@ RSpec.describe User, type: :model do
       it 'nicknameが空では登録できないこと' do
         @user.nickname = nil
         @user.valid?
-        expect(@user.errors.full_messages).to include("ニックネームを入力してください")
+        expect(@user.errors.full_messages).to include('ニックネームを入力してください')
       end
 
       it '重複したnicknameが存在する場合登録できないこと' do
@@ -30,7 +30,7 @@ RSpec.describe User, type: :model do
       it 'emailが空では登録できないこと' do
         @user.email = nil
         @user.valid?
-        expect(@user.errors.full_messages).to include("Eメールを入力してください")
+        expect(@user.errors.full_messages).to include('Eメールを入力してください')
       end
 
       it '重複したemailが存在する場合登録できないこと' do
@@ -50,7 +50,7 @@ RSpec.describe User, type: :model do
       it 'passwordが空では登録できないこと' do
         @user.password = nil
         @user.valid?
-        expect(@user.errors.full_messages).to include("パスワードを入力してください")
+        expect(@user.errors.full_messages).to include('パスワードを入力してください')
       end
 
       it 'passwordが6文字以下では登録できないこと' do
