@@ -23,3 +23,16 @@ ja:
       long: "%Y年%m月%d日(%a) %H時%M分%S秒 %Z"
     am: "午前"
     pm: "午後"
+  
+  activerecord:
+   attributes:
+     user:
+       nickname: ニックネーム
+     article:
+       title: タイトル
+       images: 画像
+       address: 住所
+       time_zone_id: 時間帯
+       prefecture_id: 都道府県
+       category_id: カテゴリー
+        
