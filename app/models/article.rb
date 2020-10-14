@@ -12,11 +12,11 @@ class Article < ApplicationRecord
   with_options presence: true do
     validates :title, length: { maximum: 30 }
     validates :date
-    validates :time_zone_id, numericality: { other_than: 1, message: 'select' }
-    validates :prefecture_id, numericality: { other_than: 1, message: 'select' }
-    validates :category_id, numericality: { other_than: 1, message: 'select' }
-    validates :text
+    validates :time_zone_id, numericality: { other_than: 1, message: 'を選択してください' }
+    validates :prefecture_id, numericality: { other_than: 1, message: 'を選択してください' }
+    validates :category_id, numericality: { other_than: 1, message: 'を選択してください' }
     validates :address
+    validates :images
   end
 
   validates :hashbody, length: { maximum: 30 }
@@ -50,6 +50,6 @@ class Article < ApplicationRecord
   def validate_images
     return if images.count <= 3
 
-    errors.add(:images, 'You can upload max 3 images')
+    errors.add(:images, 'は最大3枚までアップロード可能です')
   end
 end
