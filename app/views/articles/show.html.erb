@@ -23,9 +23,12 @@
      <%= render_with_hashtags(@article.hashbody) %>
     </div>
 
-    <div class='article-img-content'>
-      <%= image_tag @article.image, class: "show-img" %>
-    </div>
+   
+     <div class='article-img-content'>
+        <% @article.images.each do |image| %>
+         <%= image_tag image, class:'show-img' %>
+        <% end %>
+      </div>
 
    <div class="rate-wrapper">
     <div class="map" id="map"></div>

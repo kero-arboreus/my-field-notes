@@ -34,10 +34,9 @@
    </div>
   </div>
 
-   
    <div class="image-contents">
     <span class="indispensable">必須</span>
-    <%= f.file_field :image, id: "article_image"%>
+    <%= f.file_field :images, name: 'article[images][]',id: "article_image" %>
     <div id="image_list"></div>
    </div>
  
