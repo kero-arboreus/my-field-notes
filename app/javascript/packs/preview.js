@@ -1,7 +1,7 @@
 if (document.URL.match( /articles/ && /new/ ) || document.URL.match( /articles/ && /edit/ )) {
 document.addEventListener('DOMContentLoaded', function(){
   const ImageList = document.getElementById('image_list');
-  
+
   const createImageHTML = (blob) => {
 
     const imageElement = document.createElement('div');
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function(){
     createImageHTML(blob);
     })
   }
-
+  
     document.getElementById('article_image').addEventListener('change', (e) => {
     let file = e.target.files[0];
     let blob = window.URL.createObjectURL(file);
