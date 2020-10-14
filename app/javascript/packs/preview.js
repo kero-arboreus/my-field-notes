@@ -1,4 +1,3 @@
-if (document.URL.match( /articles/ && /new/ ) || document.URL.match( /articles/ && /edit/ )) {
 document.addEventListener('DOMContentLoaded', function(){
   const ImageList = document.getElementById('image_list');
 
@@ -37,4 +36,3 @@ document.addEventListener('DOMContentLoaded', function(){
     createImageHTML(blob)
    });
  });
-}
