@@ -46,9 +46,10 @@ class Article < ApplicationRecord
   validate :validate_images
 
   private
+
   def validate_images
     return if images.count <= 3
-  
+
     errors.add(:images, 'You can upload max 3 images')
   end
 end
