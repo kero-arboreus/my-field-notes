@@ -1,13 +1,13 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: :show
 
   def index
     @nickname = current_user.nickname
   end
 
   def show
-    user = User.find(params[:id])
-    @articles = user.articles
+    @user = User.find(params[:id])
+    @articles = @user.articles
   end
 
   def edit
