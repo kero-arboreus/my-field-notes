@@ -46,13 +46,13 @@
 
 | column | Type       | options                        |
 | -------| ---------  | ------------------------------ |
-| text   | text       | null: false                    |
-| item   | references | null: false, foreign_key: true |
+| message| text       | null: false                    |
+| article   | references | null: false, foreign_key: true |
 | user   | references | null: false, foreign_key: true |
 
 ### Association
  belongs_to :user
- belongs_to :item
+ belongs_to :article
 
    ## favorites テーブル
 

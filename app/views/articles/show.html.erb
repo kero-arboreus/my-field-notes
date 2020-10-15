@@ -52,7 +52,31 @@
          
 
     <div class="text-box"><%= @article.text %></div>
+
+  <div class="comment-wrapper">
+   <div class="comment-title">Comment</div>
+   <% if @comments.present? %>
+    <div class="comment-list">
+      <% @comments.reverse.each do |comment| %>
+        <p class="comment-contents"><%= comment.user.nickname %>: <%= comment.message %></p>
+      <% end %>
+    </div>
+   <% else %>
+     <div class="comment-message">コメントがありません</div>
+   <% end%>
+   
+   <% if user_signed_in?%>
+     <%= form_with(model: [@article,@comment], local: true, class: "comment-form") do |f| %>
+     <%= f.text_area :message, class:"text-form", placeholder: "コメントする" %>
+     <p><%= f.submit 'Send', class: "comment-btn" %></p>
+     <% end %>
+   <% else %>
+     <p class="comment-warn">※コメントの投稿はログインユーザーのみ可能です</p>
+   <% end %>
+  </div>
+ 
  </div>
+
 
  <div class="side-menu">
   <%= render "shared/side_bar"%>
