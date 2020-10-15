@@ -5,7 +5,7 @@ FactoryBot.define do
     date               { '2020-01-01' }
     time_zone_id       { 2 }
     prefecture_id      { 14 }
-    address            {'台東区上野公園9-83'}
+    address            { '台東区上野公園9-83'}
     parking            {5}
     toilet             {5}
     crowd              {5}
