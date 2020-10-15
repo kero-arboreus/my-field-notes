@@ -1,4 +1,12 @@
 class CommentsController < ApplicationController
-  def new
+  
+  def create
+    @comment = Comment.create(comment_params)
+    redirect_to "/articles/#{@comment.article.id}"
   end
+
+  private
+   def comment_params
+    params.require(:comment).permit(:message).merge(user_id: current_user.id, article_id: params[:article_id])
+   end
 end
