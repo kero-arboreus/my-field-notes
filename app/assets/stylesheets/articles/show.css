@@ -119,3 +119,69 @@ table td{
   text-align: left;
   border-radius: 5px;
 }
+
+.comment-wrapper{
+  width: 90%;
+  margin: 5% auto 0;
+  color: #454545;
+  border: 3px solid #4DC0B2;
+  border-radius: 10px;
+}
+
+.comment-title{
+  background-color: #4dc0b2;
+  color: white;
+  height: 5vh;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.comment-title:before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f075";
+  padding: 0 7px;
+}
+
+.comment-list{
+  padding: 2% 3%;
+  width: 100%;
+  height: 20vh;
+  overflow: scroll;
+  text-align: left;
+  overflow: scroll;
+}
+
+.comment-message{
+  padding: 3% 3%;
+  width: 100%;
+  text-align: center;
+}
+
+.comment-contents{
+  background-color: #ffeddb;
+  width: 100%;
+  min-width: 120px;
+  max-width: 100%;
+  border-radius: 5px;
+  padding: 1% 3%;
+  margin-bottom: 2%; 
+}
+
+.comment-form{
+  margin: 3% 0;
+}
+.comment-btn{
+ margin-top: 2%;
+ width: 20%;
+ height: 4vh;
+ background-color: #4dc0b2;
+ color: white;
+ cursor: pointer;
+ border: none;
+ border-radius: 30px;
+}
+
+.comment-warn{
+  padding: 3% 0;
+}
