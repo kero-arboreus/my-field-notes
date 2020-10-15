@@ -65,3 +65,29 @@
   content: "\f044";
   padding-right: 3%;
 }
+
+.no-article{
+  text-align: center;
+  color: #454545;
+}
+
+.no-article-message{
+  margin-bottom: 3%;
+}
+
+.new-from-mypage{
+  font-size: 18px;
+  padding: 2%;
+  color: white;
+  border-top: 4px solid #ffdd99;
+  border-right: 4px solid #ffaa00;
+  border-bottom: 4px solid #ffbb33;
+  border-left: 4px solid #ffeecc;
+  border-radius: 10px;
+  background-color:#FFC042;
+}
+
+.fishing-img{
+ margin-top: 30%;
+ text-align: center;
+}

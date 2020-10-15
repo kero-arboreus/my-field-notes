@@ -1,11 +1,12 @@
 <div class="article-form">
   <div class="hashtag-main">
   <h1 class="article-form-title">
-    <%= @hashtag.hashname %>の検索結果
+    <%= current_user.nickname %>の記録
    </h1>
-
+  
+   <% if @articles.present?%>
     <ul class="hashtag-lists">
-    <% @article.reverse.each do |article| %>
+     <% @articles.reverse.each do |article| %>
      <li class='list'>
        <%=link_to article_path(article.id) do %>
        <div class="article-info">
@@ -19,6 +20,15 @@
      </li>
     <% end %>
    </ul>
+   <% else %>
+    <div class="no-article">
+     <p class="no-article-message">まだ記録がありません</p>
+     <%= link_to "フィールド体験を記録する!", new_article_path, class: "new-from-mypage" %>
+    </div>
+    <div class="fishing-img">
+     <%= image_tag 'fishing.png' %>
+    </div>
+   <% end %>
   </div>
   <footer class="article-form-footer">
    <%= link_to image_tag("logo.png", class:"footer-logo"), "/" %>

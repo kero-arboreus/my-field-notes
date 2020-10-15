@@ -7,7 +7,7 @@
   <div class="mypage-wrap">
    <p class="nickname"><%= current_user.nickname %></p>
   <ul class="user-menu">
-   <li class="user-articles"><%= link_to "今までの記録", '#'%></li>
+   <li class="user-articles"><%= link_to "今までの記録", user_path(current_user) %></li>
    <li class="user-favorite"><%= link_to "お気に入りのノート", '#'%></li>
    <li class="user-edit"><%= link_to "ユーザー情報の変更", '#'%></li>
   </ul>
