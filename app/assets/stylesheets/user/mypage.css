@@ -1,0 +1,97 @@
+.mypage-left{
+  margin-right: 5%;
+}
+
+.footstamp{
+  height: 50vh;
+  margin-left: 10%;
+}
+
+.mypage-wrap{
+  color:#454545;
+  width: 20%;
+  height: 50vh;
+}
+
+.nickname{
+  font-size: 32px;
+  margin-bottom: 30%;
+  border-top: 2px solid #37AB9D;
+  border-bottom: 2px solid #37AB9D;
+  text-align: center;
+}
+
+.nickname:before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f2bd";
+  padding-right: 5%;
+}
+
+.user-menu{
+  text-align: center;
+}
+
+.user-menu a{
+  color: #454545;
+  font-size: 18px;
+}
+
+.user-articles{
+  padding-bottom: 20%;
+}
+
+.user-articles:before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f328";
+  padding-right: 3%;
+}
+
+.user-favorite{
+  padding-bottom: 20%;
+}
+
+.user-favorite:before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  padding-right: 3%;
+}
+
+.user-edit{
+  padding-bottom: 20%;
+}
+
+.user-edit:before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f044";
+  padding-right: 3%;
+}
+
+.no-article{
+  text-align: center;
+  color: #454545;
+}
+
+.no-article-message{
+  margin-bottom: 3%;
+}
+
+.new-from-mypage{
+  font-size: 18px;
+  padding: 2%;
+  color: white;
+  border-top: 4px solid #ffdd99;
+  border-right: 4px solid #ffaa00;
+  border-bottom: 4px solid #ffbb33;
+  border-left: 4px solid #ffeecc;
+  border-radius: 10px;
+  background-color:#FFC042;
+}
+
+.fishing-img{
+ margin-top: 30%;
+ text-align: center;
+}
+
+.bear{
+  padding-left: 25%;
+}

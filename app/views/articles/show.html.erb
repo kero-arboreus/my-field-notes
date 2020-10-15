@@ -16,7 +16,7 @@
      <div class="datetime-info">
       <p class="show-date"><%= "日付: " %><%= @article.date %></p>
       <p> <%= "時間帯: " %><%= @article.time_zone.name %> </p>
-       <%= link_to @article.user.nickname, "#", class: "show-writer" %>
+       <%= link_to @article.user.nickname, user_path(@article.user_id), class: "show-writer" %>
     </div>
 
     <div class="hashtag">
