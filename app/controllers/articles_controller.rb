@@ -52,6 +52,7 @@ class ArticlesController < ApplicationController
   end
 
   def search
+    @results = Article.search(params[:keyword])
   end
 
   private
