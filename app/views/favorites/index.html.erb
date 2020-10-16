@@ -3,7 +3,8 @@
     <h1 class="article-form-title">
      <%= current_user.nickname %>のお気に入り
     </h1>
-
+  
+   <% if @favorites.present?%>
     <ul class="hashtag-lists">
      <% @favorites.reverse.each do |article| %>
      <li class='list'>
@@ -19,6 +20,11 @@
      </li>
      <% end %>
    </ul>
+   <% else %>
+   <div class="no-article">
+    <p class="no-article-message">お気に入りに登録された記事がありません</p>
+   </div>
+   <% end %>
    <div class="return-home">
     <%= link_to "HOME", root_path, class: "home" %>
    </div>
