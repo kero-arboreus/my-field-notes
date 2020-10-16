@@ -33,3 +33,10 @@
   border-radius: 5px;
   border-bottom: 2px solid black;
 }
+
+.home:before{
+  font-family: "Font Awesome 5 Free" ;
+  content: "\f6bb";
+  font-weight: 900;
+  padding-right: 3%;
+}

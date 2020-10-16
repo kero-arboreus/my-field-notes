@@ -17,7 +17,35 @@ a{
   font-size: 14px; 
 }
 
+.search-lists{
+  height: 30vh;
+  font-size: 14px;
+  border-bottom:1px solid white;
+}
+
 .search-list{
-  padding: 20% 10% ;
+  padding: 10% 10% ;
+  text-align: center;
+}
+
+.search-label{
+  margin-top: 10%;
+}
+
+.search-label:before{
+  font-family: "Font Awesome 5 Free" ;
+  content: "\f1e5";
+  font-weight: 900;
+  padding-right: 3%;
+}
+
+.search-btn{
+  margin-top: 15%;
+  font-size: 16px;
+  padding: 3px;
+  background-color: #ffc042;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
 }
 

@@ -5,13 +5,13 @@
   </a>
 </div>
  
- <div class="search-list">
-  <%= search_form_for @p, url: search_articles_path do |f| %>
-    <%= f.label :category_id, 'カテゴリー' %>
+ <div class="search-lists">
+  <%= search_form_for @p, url: search_articles_path, class: "search-list" do |f| %>
+    <p class="search-label"><%= f.label :category_id, 'カテゴリー' %></p>
     <%= f.collection_select :category_id_eq, Category.all, :id, :name, include_blank: '指定なし' %>
-    <%= f.label :prefecture_id, '都道府県' %>
+    <p class="search-label"><%= f.label :prefecture_id, '都道府県' %></p>
     <%= f.collection_select :prefecture_id_eq, Prefecture.all, :id, :name, include_blank: '指定なし' %>
-    <%= f.submit '検索' %>
+    <p><%= f.submit 'Search', class: "search-btn" %></p>
   <% end %>
   </div>
 
