@@ -1,30 +1,30 @@
 <div class="article-form">
   <div class="hashtag-main">
-    <h1 class="article-form-title">検索結果</h1>
-
-    <% if @results.length !=0 %>
+    <h1 class="article-form-title">
+     <%= current_user.nickname %>のお気に入り
+    </h1>
+  
+   <% if @favorites.present?%>
     <ul class="hashtag-lists">
-     <% @results.reverse.each do |result| %>
+     <% @favorites.reverse.each do |article| %>
      <li class='list'>
-       <%=link_to article_path(result.id) do %>
+       <%=link_to article_path(article.id) do %>
        <div class="article-info">
-         <h2 class="hash-title"><%= result.title %></h2>
-         <p class="writer"><%= result.user.nickname %></p>
+         <h2 class="hash-title"><%= article.title %></h2>
+         <p class="writer"><%= article.user.nickname %></p>
        </div>
        <div class='article-img-content'>
-          <%= image_tag result.images.first, class: "article-img"%>
+          <%= image_tag article.images.first, class: "article-img"%>
        </div>
        <% end %>
      </li>
      <% end %>
-    </ul>
+   </ul>
    <% else %>
    <div class="no-article">
-    <p class="no-article-message">該当する記録はありません</p>
-    </div>
+    <p class="no-article-message">お気に入りに登録された記事がありません</p>
+   </div>
    <% end %>
-
-
    <div class="return-home">
     <%= link_to "HOME", root_path, class: "home" %>
    </div>

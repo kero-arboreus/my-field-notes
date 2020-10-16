@@ -1,5 +1,7 @@
 class Article < ApplicationRecord
   belongs_to :user
+  has_many :users, through: :favorites
+  has_many :favorites, dependent: :destroy
   has_many_attached :images
   has_many :article_hashes, dependent: :destroy
   has_many :hashtags, through: :article_hashes
