@@ -45,8 +45,8 @@ class Article < ApplicationRecord
   end
 
   def self.search(search)
-    if search != ""
-      Article.where('title LIKE(?) OR text LIKE(?) OR hashbody LIKE(?)', "%#{search}%","%#{search}%","%#{search}%")
+    if search != ''
+      Article.where('title LIKE(?) OR text LIKE(?) OR hashbody LIKE(?)', "%#{search}%", "%#{search}%", "%#{search}%")
     else
       Article.all
     end

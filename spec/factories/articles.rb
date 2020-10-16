@@ -6,7 +6,7 @@ FactoryBot.define do
     time_zone_id       { 2 }
     prefecture_id      { 14 }
     address            { '台東区上野公園9-83' }
-    parking            {5}
+    parking            { 5}
     toilet             {5}
     crowd              {5}
     hashbody           {'#ねこ'}
