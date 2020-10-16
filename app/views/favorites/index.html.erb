@@ -1,0 +1,29 @@
+<div class="article-form">
+  <div class="hashtag-main">
+    <h1 class="article-form-title">
+     <%= current_user.nickname %>のお気に入り
+    </h1>
+
+    <ul class="hashtag-lists">
+     <% @favorites.reverse.each do |article| %>
+     <li class='list'>
+       <%=link_to article_path(article.id) do %>
+       <div class="article-info">
+         <h2 class="hash-title"><%= article.title %></h2>
+         <p class="writer"><%= article.user.nickname %></p>
+       </div>
+       <div class='article-img-content'>
+          <%= image_tag article.images.first, class: "article-img"%>
+       </div>
+       <% end %>
+     </li>
+     <% end %>
+   </ul>
+   <div class="return-home">
+    <%= link_to "HOME", root_path, class: "home" %>
+   </div>
+  </div>
+  <footer class="article-form-footer">
+   <%= link_to image_tag("logo.png", class:"footer-logo"), "/" %>
+  </footer>
+</div>

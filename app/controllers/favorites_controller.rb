@@ -2,7 +2,7 @@ class FavoritesController < ApplicationController
   before_action :set_article, only: [:create, :destroy]
 
   def index
-    @favorites = Favorite.where(user_id: current_user.id)
+    @favorites = current_user.fav_articles
   end
 
   def create

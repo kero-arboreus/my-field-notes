@@ -8,7 +8,7 @@
    <p class="nickname"><%= current_user.nickname %></p>
   <ul class="user-menu">
    <li class="user-articles"><%= link_to "今までの記録", user_path(current_user) %></li>
-   <li class="user-favorite"><%= link_to "お気に入りのノート", '#'%></li>
+   <li class="user-favorite"><%= link_to "お気に入りのノート", user_favorites_path(current_user) %></li>
    <li class="user-edit"><%= link_to "ユーザー情報の変更", edit_user_path(current_user) %></li>
   </ul>
 
