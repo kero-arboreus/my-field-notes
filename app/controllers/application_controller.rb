@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   before_action :basic_auth
   before_action :configure_permitted_parameters, if: :devise_controller?
+  before_action :search_article
 
   private
 
@@ -12,5 +13,10 @@ class ApplicationController < ActionController::Base
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:nickname])
+  end
+
+  def search_article
+    @p = Article.ransack(params[:q])
+    @results = @p.result.includes(:category_id, :prefecture_id)
   end
 end

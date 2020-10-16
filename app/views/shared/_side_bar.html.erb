@@ -6,7 +6,12 @@
 </div>
  
  <div class="search-list">
-  <p>カテゴリー検索</p>
-  <p>都道府県検索</p>
+  <%= search_form_for @p, url: search_articles_path do |f| %>
+    <%= f.label :category_id, 'カテゴリー' %>
+    <%= f.collection_select :category_id_eq, Category.all, :id, :name, include_blank: '指定なし' %>
+    <%= f.label :prefecture_id, '都道府県' %>
+    <%= f.collection_select :prefecture_id_eq, Prefecture.all, :id, :name, include_blank: '指定なし' %>
+    <%= f.submit '検索' %>
+  <% end %>
   </div>
 
