@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
   before_action :authenticate_user!, only: [:new, :edit, :destroy]
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+
   def index
     @articles = Article.includes(:user).order('created_at DESC')
   end
@@ -48,6 +49,10 @@ class ArticlesController < ApplicationController
   def hashtag
     @hashtag = Hashtag.find_by(hashname: params[:name])
     @article = @hashtag.articles.page(params[:page]).order('updated_at DESC')
+  end
+
+  def search
+    @results = Article.search(params[:keyword])
   end
 
   private

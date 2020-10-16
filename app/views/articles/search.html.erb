@@ -1,0 +1,33 @@
+<div class="article-form">
+  <div class="hashtag-main">
+    <h1 class="article-form-title">検索結果</h1>
+
+    <% if @results.length !=0 %>
+    <ul class="hashtag-lists">
+     <% @results.reverse.each do |result| %>
+     <li class='list'>
+       <%=link_to article_path(result.id) do %>
+       <div class="article-info">
+         <h2 class="hash-title"><%= result.title %></h2>
+         <p class="writer"><%= result.user.nickname %></p>
+       </div>
+       <div class='article-img-content'>
+          <%= image_tag result.images.first, class: "article-img"%>
+       </div>
+       <% end %>
+     </li>
+     <% end %>
+    </ul>
+   <% else %>
+    該当する記録はありません
+   <% end %>
+
+
+   <div class="return-home">
+    <%= link_to "HOME", root_path, class: "home" %>
+   </div>
+  </div>
+  <footer class="article-form-footer">
+   <%= link_to image_tag("logo.png", class:"footer-logo"), "/" %>
+  </footer>
+</div>

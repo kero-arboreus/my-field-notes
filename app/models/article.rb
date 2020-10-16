@@ -44,6 +44,14 @@ class Article < ApplicationRecord
     end
   end
 
+  def self.search(search)
+    if search != ''
+      Article.where('title LIKE(?) OR text LIKE(?) OR hashbody LIKE(?)', "%#{search}%", "%#{search}%", "%#{search}%")
+    else
+      Article.all
+    end
+  end
+
   validate :validate_images
 
   private
