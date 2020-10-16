@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root to: 'articles#index'
   resources :users, only: [:index, :show, :edit, :update]
   resources :articles do
+    resources :favorites, only: [:index, :create, :destroy]
     resources :comments,only: :create
     collection do
       get 'search'
