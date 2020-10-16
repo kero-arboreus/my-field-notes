@@ -51,6 +51,9 @@ class ArticlesController < ApplicationController
     @article = @hashtag.articles.page(params[:page]).order('updated_at DESC')
   end
 
+  def search
+  end
+
   private
 
   def article_params

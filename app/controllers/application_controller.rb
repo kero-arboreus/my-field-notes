@@ -17,6 +17,8 @@ class ApplicationController < ActionController::Base
 
   def search_article
     @p = Article.ransack(params[:q])
-    @results = @p.result.includes(:category_id, :prefecture_id)
+    @category = Category.where.not(id: 1)
+    @prefecture = Prefecture.where.not(id: 1)
+    @results = @p.result
   end
 end
