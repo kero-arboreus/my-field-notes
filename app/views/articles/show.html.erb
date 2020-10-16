@@ -8,7 +8,15 @@
      <%= link_to "編集", edit_article_path(@article.id), class: "edit-btn" %>
      <%= link_to "削除", article_path(@article.id), method: :delete, class: "delete-btn" %>
      </div>
-    <% end %>
+   <% else %>
+    <div class="favorite">
+      <% unless current_user == @article.user %>
+        <div id="fav_button_<%= @article.id %>">
+        <%= render partial: "favorites/favorite", :locals => { article: @article }%>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
      
      
       <h2 class="show-title"><%= @article.title %></h2>
@@ -50,8 +58,8 @@
     </table>
     <%= render 'rating'%>
    </div>
-         
-
+    
+  
     <div class="text-box"><%= @article.text %></div>
 
   <div class="comment-wrapper">
