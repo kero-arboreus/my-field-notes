@@ -69,3 +69,4 @@ gem "aws-sdk-s3", require: false
 gem 'geocoder'
 gem 'kaminari'
 gem 'rails-i18n'
+gem 'ransack'
