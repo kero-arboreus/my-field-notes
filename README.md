@@ -13,6 +13,7 @@
 ### Association
  has_many :articles
  has_many :favorites
+ has_many :articles, through: :favorite
  has_many :comments
 
 
@@ -37,6 +38,7 @@
 ### Association
  belongs_to :user
  has_many   :favorites
+ has_many :users, through: :favorite
  has_many   :comments
  has_many   :article_hashes
  has_many   :hashtags, through: :article_hashes

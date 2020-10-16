@@ -8,5 +8,7 @@ class User < ApplicationRecord
   validates :nickname, presence: true, uniqueness: { case_sensitive: false }
 
   has_many :articles
+  has_many :favorites
+  has_many :fav_articles, through: :favorites, source: :article
   has_many :comments
 end
