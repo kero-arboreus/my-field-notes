@@ -1,7 +1,7 @@
 $(function() {
   var API_KEY = '6b3899b9b1258ae48ae06550a267c505'
   var city = 'Japan'
-  var url = 'http://api.openweathermap.org/data/2.5/forecast?q=' + city + ',jp&units=metric&APPID=' + API_KEY;
+  var url = 'https://api.openweathermap.org/data/2.5/forecast?q=' + city + ',jp&units=metric&APPID=' + API_KEY;
   $.ajax({
     url: url,
     dataType: "json",
