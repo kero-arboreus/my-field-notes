@@ -1,15 +1,19 @@
+.side-contents{
+  height: 80vh;
+}
+
 a{
   text-decoration: none;
 }
 
 .newpost{
-  padding: 10%;
+  padding: 15%;
   text-align: center;
   border-bottom: 1px solid white;
 }
 
 .newpost-btn{
-  width: 30%;
+  width: 40%;
 }
 
 .newpost-text{
@@ -18,14 +22,13 @@ a{
 }
 
 .search-lists{
-  height: 35vh;
   font-size: 14px;
-  border-bottom:1px solid white;
 }
 
 .search-list{
-  padding: 10% 10% ;
+  padding-bottom: 10%;
   text-align: center;
+  border-bottom:1px solid white;
 }
 
 .search-label{
@@ -47,5 +50,15 @@ a{
   color: white;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.weather-wrap{
+  padding: 10% 0;
+  text-align: center;
+}
+
+.weather{
+  font-family: 'Architects Daughter', cursive;
+  font-size: 18px;
 }
 
