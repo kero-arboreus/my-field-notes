@@ -15,6 +15,7 @@
 
 .nickname{
   font-size: 32px;
+  margin-bottom: 30%;
   border-top: 2px solid #37AB9D;
   border-bottom: 2px solid #37AB9D;
   text-align: center;
@@ -24,18 +25,6 @@
   font-family: "Font Awesome 5 Free";
   content: "\f2bd";
   padding-right: 5%;
-}
-
-.user-prefecture{
-  margin: 5% 0 20%;
-  text-align: center;
-}
-
-.user-prefecture:before{
-  font-family: "Font Awesome 5 Free";
-  content: "\f015";
-  font-weight: 900;
-  padding-right: 2%;
 }
 
 .user-menu{

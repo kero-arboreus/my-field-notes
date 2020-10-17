@@ -9,12 +9,11 @@
 | nickname        | string  | null: false |
 | email           | string  | null: false |
 | password        | string  | null: false |
-| prefecture_id   | integer | null: false |
 
 ### Association
  has_many :articles
  has_many :favorites
- has_many :articles, through: :favorites
+ has_many :articles, through: :favorite
  has_many :comments
 
 
@@ -24,23 +23,22 @@
 | ------------- | ---------- | ------------------------------ |
 | title         | string     | null: false                    |
 | date          | date       | null: false                    |
-| time_zone_id  | integer    | null: false                    |
+| time_zone_id  | integer    |                                |
 | prefecture_id | integer    | null: false                    |
 | category_id   | integer    | null: false                    |
-| text          | text       |                                |
+| text          | text       | null: false                    |
 | address       | string     |                                |
 | latitude      | float      |                                |
 | longitude     | float      |                                |
 | parking       | float      |                                |
 | crowd         | float      |                                |
 | toilet        | float      |                                |
-| hashbody      | string     |                                |
 | user          | references | null: false, foreign_key: true |
 
 ### Association
  belongs_to :user
  has_many   :favorites
- has_many :users, through: :favorites
+ has_many :users, through: :favorite
  has_many   :comments
  has_many   :article_hashes
  has_many   :hashtags, through: :article_hashes
@@ -48,11 +46,11 @@
 
   ## comments テーブル
 
-| column  | Type       | options                        |
-| ------- | ---------  | ------------------------------ |
-| message | text       | null: false                    |
-| article | references | null: false, foreign_key: true |
-| user    | references | null: false, foreign_key: true |
+| column | Type       | options                        |
+| -------| ---------  | ------------------------------ |
+| message| text       | null: false                    |
+| article   | references | null: false, foreign_key: true |
+| user   | references | null: false, foreign_key: true |
 
 ### Association
  belongs_to :user
