@@ -7,7 +7,7 @@ a{
 }
 
 .newpost{
-  padding: 15%;
+  padding: 10%;
   text-align: center;
   border-bottom: 1px solid white;
 }
@@ -22,7 +22,7 @@ a{
 }
 
 .search-lists{
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .search-list{
@@ -45,7 +45,7 @@ a{
 .search-btn{
   margin-top: 15%;
   font-size: 16px;
-  padding: 3px;
+  padding: 3px 20px;
   background-color: #ffc042;
   color: white;
   cursor: pointer;
@@ -53,7 +53,7 @@ a{
 }
 
 .weather-wrap{
-  padding: 10% 0;
+  padding: 10% 0 5%;
   text-align: center;
 }
 
