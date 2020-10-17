@@ -1,3 +1,7 @@
+.side-contents{
+  height: 80vh;
+}
+
 a{
   text-decoration: none;
 }
@@ -9,7 +13,7 @@ a{
 }
 
 .newpost-btn{
-  width: 30%;
+  width: 40%;
 }
 
 .newpost-text{
@@ -18,14 +22,13 @@ a{
 }
 
 .search-lists{
-  height: 35vh;
-  font-size: 14px;
-  border-bottom:1px solid white;
+  font-size: 16px;
 }
 
 .search-list{
-  padding: 10% 10% ;
+  padding-bottom: 10%;
   text-align: center;
+  border-bottom:1px solid white;
 }
 
 .search-label{
@@ -42,10 +45,20 @@ a{
 .search-btn{
   margin-top: 15%;
   font-size: 16px;
-  padding: 3px;
+  padding: 3px 20px;
   background-color: #ffc042;
   color: white;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.weather-wrap{
+  padding: 10% 0 5%;
+  text-align: center;
+}
+
+.weather{
+  font-family: 'Architects Daughter', cursive;
+  font-size: 18px;
 }
 
