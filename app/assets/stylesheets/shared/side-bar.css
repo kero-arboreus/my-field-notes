@@ -55,6 +55,7 @@ a{
 .weather-wrap{
   padding: 10% 0 5%;
   text-align: center;
+  height: 20vh;
 }
 
 .weather{
