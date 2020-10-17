@@ -29,7 +29,7 @@ $(function() {
     var icon = data.list[i].weather[0].icon;
     var html =
     '<div class="weather-report">' +
-      '<img src="http://openweathermap.org/img/w/' + icon + '.png">' +
+      '<img src="https://openweathermap.org/img/w/' + icon + '.png">' +
       '<span class="weather-date">' + day + '</span>' +
       '<span class="weather-temp">' + Math.round(data.list[i].main.temp) + '℃</span' +
     '</div>';
