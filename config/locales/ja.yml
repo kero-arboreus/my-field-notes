@@ -28,7 +28,6 @@ ja:
    attributes:
      user:
        nickname: ニックネーム
-       prefecture_id: 都道府県
      article:
        title: タイトル
        date: 日付

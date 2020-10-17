@@ -2,7 +2,7 @@
 
 <div class="main">
  <div class="main-contents">
-  <h1 class="new-post">Recent Posts</h1>
+  <h1 class="new-post">New Post</h1>
    <ul class="article-lists">
     <% @articles.each do |article| %>
      <li class='list'>
@@ -18,7 +18,6 @@
      </li>
     <% end %>
    </ul>
-  <div class="paginate"> <%= paginate @articles %></div>
  </div>
  <div class="side-menu">
   <%= render "shared/side_bar"%>
