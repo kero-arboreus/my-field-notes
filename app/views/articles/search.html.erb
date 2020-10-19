@@ -8,7 +8,7 @@
      <li class='list'>
        <%=link_to article_path(result.id) do %>
        <div class="article-info">
-         <h2 class="hash-title"><%= result.title %></h2>
+         <h2 class="hash-title"><%= truncate(result.title, length: 8) %></h2>
          <p class="writer"><%= result.user.nickname %></p>
        </div>
        <div class='article-img-content'>
