@@ -8,7 +8,7 @@
      <li class='list'>
        <%=link_to article_path(article.id) do %>
        <div class="article-info">
-         <span class="title"><%= truncate(article.title, length: 8) %></span>
+         <span class="title"><%= truncate(article.title, length: 10) %></span>
          <span class="writer"><%= article.user.nickname %></span>
        </div>
        <div class='article-img-content'>
