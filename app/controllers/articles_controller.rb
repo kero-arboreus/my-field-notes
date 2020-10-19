@@ -51,8 +51,8 @@ class ArticlesController < ApplicationController
     @article = @hashtag.articles.page(params[:page]).order('updated_at DESC')
   end
 
-  def search
-    @results = Article.search(params[:keyword])
+  def keyword
+    @articles = Article.search(params[:keyword])
   end
 
   private

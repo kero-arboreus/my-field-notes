@@ -1,11 +1,10 @@
 <div class="article-form">
   <div class="hashtag-main">
-    <h1 class="article-form-title">
-     <%= @hashtag.hashname %>の検索結果
-    </h1>
+    <h1 class="article-form-title">検索結果</h1>
 
-    <ul class="hashtag-lists">
-     <% @article.reverse.each do |article| %>
+<% if @articles.length !=0 %>
+       <ul class="hashtag-lists">
+        <% @articles.reverse.each do |article| %>
      <li class='list'>
        <%=link_to article_path(article.id) do %>
        <div class="article-info">
@@ -18,7 +17,14 @@
        <% end %>
      </li>
      <% end %>
-   </ul>
+    </ul>
+ <% else %>
+   <div class="no-article">
+    <p class="no-article-message">該当する記録はありません</p>
+    </div>
+   <% end %>
+
+
    <div class="return-home">
     <%= link_to "HOME", root_path, class: "home" %>
    </div>

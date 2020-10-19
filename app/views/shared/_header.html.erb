@@ -1,7 +1,7 @@
 <div class="top-header"> 
  <div class="search-contents">
    <%= link_to image_tag("logo.png", class:"logo"), "/" %>
-    <%= form_with(url: search_articles_path, local: true, method: :get, class: "search-form") do |form| %>
+    <%= form_with(url: keyword_articles_path, local: true, method: :get, class: "search-form") do |form| %>
     <%= form.text_field :keyword, placeholder: "キーワードで検索する", class: "keyword-input" %>
     <%= button_to search_articles_path, class: "keyword-btn", method: :get do %>
       <i class="fas fa-search myfas"></i>
