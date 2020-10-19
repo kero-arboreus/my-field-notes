@@ -47,14 +47,14 @@
 
 .article-info{
   padding-top: 10%;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .title{
   color: #454545;
   font-size: 18px;
   font-weight: bold;
+  padding-top: 5%;
 }
 
 .title:before{
@@ -66,12 +66,11 @@
 .writer {
   color: #454545;
   font-size: 16px;
-  padding: 1vh 0 0 10%;
 }
 
 .article-img{
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   object-fit: contain;
 }
 
