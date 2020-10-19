@@ -9,7 +9,7 @@
        <%=link_to article_path(article.id) do %>
        <div class="article-info">
          <span class="title"><%= truncate(article.title, length: 8) %></span>
-         <p class="writer"><%= article.user.nickname %></p>
+         <span class="writer"><%= article.user.nickname %></span>
        </div>
        <div class='article-img-content'>
           <%= image_tag article.images.first, class: "article-img"%>

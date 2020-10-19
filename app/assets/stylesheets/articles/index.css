@@ -2,7 +2,7 @@
   width: 100%;
   min-width: 960px;
   display: flex;
-  margin: 0 auto;
+  justify-content: space-around;
 }
 
 .main-contents{
@@ -46,7 +46,7 @@
 }
 
 .article-info{
-  padding-top: 10%;
+  padding-top: 20%;
   display: flex;
   justify-content: center;
 }
