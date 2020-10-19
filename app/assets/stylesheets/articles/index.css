@@ -23,9 +23,8 @@
 
 .new-post{
  margin: 0 auto;
- padding-top: 1vh;
- width: 40%;
- height: 7vh;
+ width: 60%;
+ height: 5vh;
  font-size: 30px;
  font-weight: bold;
  background-color: #FFC042;
@@ -78,4 +77,20 @@
 
 .paginate{
   text-align: center;
+}
+
+.pagination{
+  color: #586365;
+  padding-top: 3%;
+  font-size: 18px;
+}
+
+.pagination a{
+  color: #586365;
+}
+
+.pagination a:hover{
+  padding: 1%;
+  background-color: bisque;
+  border-radius: 15px;
 }
