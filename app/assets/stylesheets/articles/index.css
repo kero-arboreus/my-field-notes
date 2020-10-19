@@ -79,3 +79,19 @@
 .paginate{
   text-align: center;
 }
+
+.pagination{
+  color: #586365;
+  padding-top: 3%;
+  font-size: 18px;
+}
+
+.pagination a{
+  color: #586365;
+}
+
+.pagination a:hover{
+  padding: 1%;
+  background-color: bisque;
+  border-radius: 15px;
+}
