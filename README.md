@@ -1,7 +1,5 @@
 # README
 
-# README
-
 ##  usersテーブル
 
 | column          | Type    | options     | 
