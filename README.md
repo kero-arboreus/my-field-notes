@@ -1,2 +1,2 @@
-![ロゴ](./images/logo.png)
+![ロゴ](./images/readme-logo.png)
 
