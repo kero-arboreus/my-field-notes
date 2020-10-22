@@ -41,7 +41,7 @@ __野生動物の生息地（漁港など釣り場は除いて）は、原則不
 ## 開発環境
 　Ruby 2.6.5  
 　Rails 6.0.0  
-　HTML/CSS
+　HTML/CSS  
 　JavaScript  
 　MySQL2 0.4.4  
 　AWS  
