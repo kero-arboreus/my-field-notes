@@ -6,9 +6,6 @@
 <br>
 <img src="images/toppage.png" width="500px">
 <br>
-<br>
-<img src="images/show.gif" width="500px">    
-<br>
 
 ## URL
 https://my-field-notes.herokuapp.com/
