@@ -101,7 +101,8 @@ __野生動物の生息地（漁港など釣り場は除いて）は、原則不
 <br>
 
 ## 動作方法
-```git clone https://github.com/kero-arboreus/my-field-notes.git
+```
+   git clone https://github.com/kero-arboreus/my-field-notes.git
    cd my-fields-notes
 　　bundle install
 　　yarn install
