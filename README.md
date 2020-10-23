@@ -2,7 +2,15 @@
 
 ## 概要
 釣りや野生動物観察など、フィールド体験の情報を記録する  
-他ユーザーの投稿からフィールド情報の収集が可能
+<br>
+<img src="images/toppage.png" width="300px">
+<br>
+<br>
+<img src="images/show.gif" width="300px">
+
+他ユーザーの投稿からフィールド情報の収集が可能  
+<br>
+<img src="images/mypage.gif" width="300px">
 
 ## URL
 https://my-field-notes.herokuapp.com/
@@ -23,10 +31,22 @@ https://my-field-notes.herokuapp.com/
 　パスワード:test2123
 
 ## 機能
-#### 投稿画面 (Jquery-Ratyを用いた星評価機能)
-#### 記事詳細画面 (GoogleMapAPIの導入/星評価の表示/コメント投稿機能）
-#### マイページ(投稿記事一覧/お気に入り一覧)
-#### 検索機能 (キーワード検索/プルダウン検索/ハッシュタグ機能)
+#### 記事投稿画面 (Jquery-Ratyを用いた星評価機能)  
+<img src="images/raty-min.gif" width="300px">
+<br><br>
+#### 記事詳細画面 (GoogleMapAPIの導入/星評価の表示/コメント投稿機能）  
+<img src="images/show.gif" width="300px">
+<br><br>
+#### マイページ機能  
+<img src="images/mypage.gif" width="300px">
+<br><br>
+#### 検索機能 (キーワード検索/プルダウン検索/ハッシュタグ機能)  
+<img src="images/keyword.gif" width="300px">
+<br><br>
+<img src="images/pulldown.gif" width="300px">
+<br><br>
+<img src="images/hashtag.gif" width="300px">
+<br><br>
 
 ## 今後の改善箇所
 1. 複数画像投稿時、3枚投稿した時点で画像選択ボタンが消えるように変更
