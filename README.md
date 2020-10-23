@@ -35,19 +35,19 @@ https://my-field-notes.herokuapp.com/
 
 ### ①記事投稿画面 
 
-<img src="images/raty-min.gif" width="500px">  
+<img src="images/raty-min.gif" width="400px">  
 
 ・Jquery-Ratyを用いた星評価機能を実装  
 
 ### ②記事詳細画面 
-<img src="images/show.gif" width="500px">  
+<img src="images/show.gif" width="400px">  
 
 ・行った日付・時間帯・イメージ・地点情報などを1ページで確認できる  
 ・視覚的にわかりやすいように、GoogleMapAPIを利用した地図とJQuery-Ratyによる☆評価で表示  
 ・情報交換などユーザー間で交流ができるように、ログインユーザーはコメント投稿が可能  
 
 ### ③マイページ機能   
-<img src="images/mypage.gif" width="500px">  
+<img src="images/mypage.gif" width="400px">  
 
 ・ヘッダーのニックネームからマイページに遷移できる  
 ・マイページには過去の記録を遡りやすくするために投稿一覧ページを作成  
@@ -57,18 +57,18 @@ https://my-field-notes.herokuapp.com/
 ユーザーが柔軟に欲しい情報を探せるように、検索機能は数種類実装  
 
 #### キーワード検索  
-<img src="images/keyword.gif" width="500px">  
+<img src="images/keyword.gif" width="400px">  
 
 ・タイトル/メモ/ハッシュタグにキーワードが含まれる記事を検索  
  
 #### プルダウン検索    
-<img src="images/pulldown.gif" width="500px">  
+<img src="images/pulldown.gif" width="400px">  
 
 ・カテゴリー・都道府県別に検索。どちらか一方の条件でも検索は可能  
 ・ユーザーが希望する生物種や地域に絞った検索を可能にするために実装  
 
 #### ハッシュタグ  
-<img src="images/hashtag.gif" width="500px">  
+<img src="images/hashtag.gif" width="400px">  
 
 ・情報収集の幅を拡げるために実装  
 ・既に興味のある記事から遷移することで、より手軽に見たい記事に辿り着くことができる  
